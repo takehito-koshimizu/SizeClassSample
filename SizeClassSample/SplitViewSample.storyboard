@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kbh-yn-K0K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="kiX-1F-G8T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Zae-Z5-kaa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtw-3r-zRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="-3"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="92S-JM-OtI">
+            <objects>
+                <splitViewController storyboardIdentifier="SplitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kbh-yn-K0K" customClass="SplitViewController" customModule="SizeClassSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Zae-Z5-kaa" kind="relationship" relationship="masterViewController" id="5d6-x8-LG1"/>
+                        <segue destination="Zae-Z5-kaa" kind="relationship" relationship="detailViewController" id="ix7-fs-3sH"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoP-TS-4hI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742" y="-2"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ix7-fs-3sH"/>
+    </inferredMetricsTieBreakers>
+</document>
